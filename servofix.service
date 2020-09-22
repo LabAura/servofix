@@ -1,0 +1,11 @@
+[Unit]
+Description=ServoblastervMonitoring
+After=servoblasterv.service
+
+[Service]
+Type=simple
+ExecStart=sudo /etc/init.d/./servofixscr.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
